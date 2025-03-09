@@ -7,6 +7,14 @@
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;     
+    font-family: Arial, sans-serif;
+}
 
 /* Estilos generales */
 * {
@@ -14,15 +22,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    height: 100vh;
-    background-color: var(--color-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .main-content {
     display: flex;
     flex-direction: column;
@@ -58,7 +57,14 @@ body {
     font-family: "Cursive", serif;
     font-weight: 900;
     font-style: italic;
-    color: var(--color-white);
+    font-color:var(--color-pink);
+    text-align: center; 
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    background-color:skyblue;
+    border-radius: 25px;
+    font-size: 50px;
 }
 
 .section-title {
@@ -160,4 +166,23 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Animación de entrada de título */
+
+.animacion-titulo {
+    font-size: 2em;
+    color:#f434a7;
+    opacity: 0; /* Iniciar como invisible */
+    transform: translateX(-100%); /* Comenzar fuera de la vista */
+    animation: slideIn 2s forwards; /* Aplicar la animación */
+    loop: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1; /* Hacer visible */
+        transform: translateX(0); /* Volver a su posición original */
+    }
 }
