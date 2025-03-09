@@ -20,16 +20,19 @@
 <!-- Aqui empieza la seccion de los botones -->
     <section class="input-section">
         <h2 class="section-title">Digite el nombre de sus amigos</h2>
+
+           <!-- Boton principal -->
             <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
-                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+                <input type="text" id="nombreInput" class="input-name" placeholder="Escribe un nombre">
+                <button id="agregarBtn">Agregar amigo a la lista</button>
+                <!--<button class="button-add" onclick="agregarAmigo()">Añadir</button>-->
             </div>
            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
-
             <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                <!-- Boton para sortear -->
+                <button id="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
                     <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
                     Sortear amigo
                 </button>
@@ -39,14 +42,13 @@
 
     <script src="app.js" defer></script>
     
-<!-- Aqui empieza la seccion de los botones de apoyo -->
-    <h2>Digite el nombre de sus amigos</h2>
-    <input type="text" id="nombreInput" placeholder="Ingresa un nombre">
-    <button id="agregarBtn">Agregar Nombre</button>
+<!-- Aqui empieza la seccion de los botones de apoyo 
+
+    
     <button id="sortearBtn">Sortear Amigo</button>
     <h3>Nombres Agregados:</h3>
     <ul id="listaNombres"></ul>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script>-->
 </body>
 </html>
