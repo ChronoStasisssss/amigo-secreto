@@ -3,7 +3,7 @@
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button-hover: #e52093;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -57,12 +57,12 @@ body {
     font-family: "Cursive", serif;
     font-weight: 900;
     font-style: italic;
-    font-color:var(--color-pink);
+    color: var(--color-primary);
     text-align: center; 
     align-items: center;
     width: 100%;
     padding: 10px 40px;
-    background-color:skyblue;
+    background-color: skyblue;
     border-radius: 25px;
     font-size: 50px;
 }
@@ -115,6 +115,7 @@ button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
+    background-color: var(--color-primary);
     border: 2px solid #000;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -155,7 +156,7 @@ ul {
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
-    background-color:blueviolet;
+    background-color: blueviolet;
     border-radius: 25px;
     font-size: 16px;
 }
@@ -169,14 +170,12 @@ ul {
 }
 
 /* Animación de entrada de título */
-
 .animacion-titulo {
     font-size: 2em;
-    color:#f434a7;
+    color: #f434a7;
     opacity: 0; /* Iniciar como invisible */
     transform: translateX(-100%); /* Comenzar fuera de la vista */
     animation: slideIn 2s forwards; /* Aplicar la animación */
-    loop: infinite;
     animation-delay: 1s;
 }
 
@@ -185,4 +184,15 @@ ul {
         opacity: 1; /* Hacer visible */
         transform: translateX(0); /* Volver a su posición original */
     }
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 10%;
+    background-color: blueviolet;
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
 }
