@@ -25,7 +25,7 @@ function actualizarLista() {
         listaNombres.appendChild(li);
     });
 }
-function sortearAmigo() {
+function sortearAmigo(){
     const amigo = nombres[Math.floor(Math.random() * nombres.length)];
     if (amigo === nombreInput.value) {
     alert(`Tu amigo secreto es: ${amigo}`);
