@@ -1,4 +1,3 @@
-console.log("Script is running...");
 document.addEventListener('DOMContentLoaded', function() {
 
     let nombres = [];
@@ -8,16 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const sortearAmigoButton = document.getElementById('sortearAmigo');
 
-    console.log("Agregando nombre..."); 
-
     agregarNombre.addEventListener('click', function() {
     const nombre = nombreInput.value.trim();
-    console.log("Captured input value:", nombre); // Debugging statement to log the captured input value
 
         if (nombre) {
-            console.log("Nombre being added:", nombre); // Debugging statement to log the name being added
+            console.log("Nombre agregado:", nombre);
             nombres.push(nombre);
-            console.log("Nombres array after adding:", JSON.stringify(nombres)); // Debugging statement to log the nombres array after adding
+            console.log("Nombres despues de agregar a la lista:", JSON.stringify(nombres));
 
             actualizarLista();
             nombreInput.value = '';
@@ -37,10 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    console.log("Nombres array:", nombres); // Debugging statement to log the nombres array
-    console.log("Sortear amigo function called"); // Debugging statement to confirm function call
-    console.log("Nombres array before selection:", JSON.stringify(nombres)); // Debugging statement to log the nombres array before selection
-
     // Función para sortear un amigo
     function sortearAmigo() {
         if (nombres.length === 0) {
@@ -51,6 +43,5 @@ document.addEventListener('DOMContentLoaded', function() {
         alert(`Tu amigo secreto es: ${amigo}`);
     }
 
-    // Agregar evento para el botón de sortear
     sortearAmigoButton.addEventListener('click', sortearAmigo);
 });
