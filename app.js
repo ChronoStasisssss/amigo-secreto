@@ -44,4 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     sortearAmigoButton.addEventListener('click', sortearAmigo);
+
+    
 });
