@@ -6,9 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const listaNombres = document.getElementById('listaNombres');
 
     const sortearAmigoButton = document.getElementById('sortearAmigo');
+    const reiniciarJuegoButton = document.getElementById('reiniciarJuego');
 
     agregarNombre.addEventListener('click', function() {
-    const nombre = nombreInput.value.trim();
+        const nombre = nombreInput.value.trim();
 
         if (nombre) {
             console.log("Nombre agregado:", nombre);
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Función para actualizar la lista en el HTML
+    // Función para actualizar la lista
     function actualizarLista() {
         listaNombres.innerHTML = '';
 
@@ -33,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Función para sortear un amigo
+    // Función para sortear
     function sortearAmigo() {
         if (nombres.length === 0) {
             alert("No hay nombres en la lista.");
@@ -43,7 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
         alert(`Tu amigo secreto es: ${amigo}`);
     }
 
-    sortearAmigoButton.addEventListener('click', sortearAmigo);
+    // Función para reiniciar
+    function reiniciarJuego() {
+        nombres = []; 
+        actualizarLista();
+        alert("El juego ha sido reiniciado.");
+    }
 
-    
+    sortearAmigoButton.addEventListener('click', sortearAmigo);
+    reiniciarJuegoButton.addEventListener('click', reiniciarJuego);
 });

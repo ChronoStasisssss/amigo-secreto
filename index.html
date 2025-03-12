@@ -30,10 +30,6 @@
 <button id="agregarNombre">Agregar amigo a la lista</button>
 
         </div>
-       
-        <ul id="listaNombres" class="name-list" aria-labelledby="listaNombres" role="list"></ul>
-
-        <ul id="resultado" class="result-list" aria-live="polite"></ul>
         <div class="button-container">
             <!-- Boton para sortear -->
             <button id="sortearAmigo" class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
@@ -41,10 +37,15 @@
                 Empezar a sortear
             </button>
         </div>
+       
+        <ul id="listaNombres" class="name-list" aria-labelledby="listaNombres" role="list"></ul>
 
-        <div class="button-container">
+        <ul id="resultado" class="result-list" aria-live="polite"></ul>
+
+
+        <div class="botonReinicio">
             <!-- Boton para reiniciar -->
-            <button id="reiniciarJuego" class="button-draw" onclick="reiniciarJuego()" aria-label="Reiniciar Juego">
+            <button id="reiniciarJuego" class="botonReinicio" onclick="reiniciarJuego()" aria-label="Reiniciar Juego">
                 <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
                 Reiniciar el juego
             </button>

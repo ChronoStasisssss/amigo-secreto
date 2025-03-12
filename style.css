@@ -169,6 +169,31 @@ ul {
     background-color: var(--color-button-hover);
 }
 
+/* Botón de reinicio */
+div.botonReinicio{
+    height: 10;
+    width: 70 %;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+.botonReinicio {
+    display: flex;
+    align-items: left;
+    color: var(--color-white);
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
 /* Animación de entrada de título */
 .animacion-titulo {
     font-size: 2em;
