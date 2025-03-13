@@ -10,6 +10,7 @@ sin mas que agregar, disfruten el proyecto y mi pagina de GitHub esta en el Foot
 Gracias.
 
 INSTRUCCIONES// GUIA RAPIDA PARA "AMIGO SECRETO"
+
 1-Selecciona a tus amigos que quieran participar en el juego.
 
 2-Introduce en la seccion indicada sus nombres.(uno por uno)
